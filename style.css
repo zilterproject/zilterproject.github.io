@@ -1,0 +1,136 @@
+html, body {
+  font-family: arial;
+}
+
+.content {
+  width: 40vw;
+  margin: auto;
+}
+
+/*Header------------------------------*/
+.title {
+  font-size: 50px;
+  font-family: arial;
+  letter-spacing: 8px;
+  margin-bottom: 0px;
+}
+
+.caption {
+  margin-top: 0.5vw;
+  margin-bottom: 2vw;
+}
+
+.heading {
+  text-align: center;
+}
+
+/*Search------------------------------*/
+.search {
+  width: 95%;
+  height: 30px;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid rgb(200,200,200);
+  padding: 10px;
+  font-size: 1vw;
+  margin-bottom: 30px;
+  margin-left: -25px;
+}
+
+.submit_search {
+  margin-left: -40px;
+  vertical-align: middle;
+  outline: none;
+}
+
+/*Separater------------------------------*/
+.separater {
+  text-align: center;
+}
+
+.inline {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.or {
+  font-size: 20px;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.hr {
+  width: 17.7vw;
+}
+
+/*Categories------------------------------*/
+.category-rows {
+  width: 40vw;
+  margin: auto;
+  margin-bottom: 1vw;
+}
+
+.product-rows {
+  width: 40vw;
+}
+
+.product {
+  width: 9.65vw;
+  height: 9.65vw;
+  cursor: pointer;
+  outine: none;
+  border: 1px solid rgb(230,230,230);
+  border-radius: 5px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.product:hover {
+  transition: 0.5s;
+  box-shadow: 1px 1px 1px 1px rgb(200,200,200);
+}
+
+.product:focus {
+  outline: none;
+}
+
+#c1 { background-image: url("c1.png"); }
+#c2 { background-image: url("c2.png"); }
+#c3 { background-image: url("c3.png"); }
+#c4 { background-image: url("c4.png"); }
+
+#p1 { background-image: url("p1.png"); }
+#p2 { background-image: url("p2.png"); }
+#p3 { background-image: url("p3.png"); }
+#p4 { background-image: url("p4.png"); }
+
+.seemore-div {
+  margin-top: 1.5vw;
+  text-align: center;
+}
+
+.seemore {
+  margin: auto;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-decoration: underline;
+  color: rgb(100,100,100);
+}
+
+.seemore:hover {
+  color: black;
+}
+
+/*Footer------------------------------*/
+.footer {
+  position: fixed;
+  left: 0px;
+  bottom: 0px;
+  height: 50px;
+  line-height: 50px;
+  width: 100%;
+  text-align: center;
+  background: rgb(220,220,220);
+  color: rgb(60,60,60);
+}

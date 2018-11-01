@@ -2,15 +2,47 @@
 <html>
 <head>
   <title>Zilter: Online Shopping Made Easier</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
   <link rel="icon" type="image/png" href="favicon.png">
 </head>
 <body>
-  <p style="width: 50%; margin: auto; margin-top: 200px; font-size: 35px; font-family: arial; line-height: 40px">
-    Online shopping for appliances and gadgets is becoming more prevalent, but
-    finding the right product for the best value on an online platform can be very overwhelming.
-    <br>
-    <br>
-    ~ Zilter Team
-  </p>
+  <div class="content">
+    <div class="heading">
+      <p class="title">Zilter</p>
+      <p class="caption">Information For Your Next Appliance Purchase</p>
+      <input type="text" class="search" placeholder="Search for product information">
+      <input type="image" src="search.png" alt="Submit" class="submit_search" width="20px" height="20px">
+    </div>
+
+    <div class="separater">
+      <hr class="inline hr">
+      <p class="inline or">or</p>
+      <hr class="inline hr">
+    </div>
+
+    <div class="category-rows">
+      <p>Select by Category</p>
+      <div class="product-rows">
+        <button id="c1" class="product"></button>
+        <button id="c2" class="product"></button>
+        <button id="c3" class="product"></button>
+        <button id="c4" class="product"></button>
+      </div>
+      <div class="seemore-div"><button class="seemore">See More</button></div>
+    </div>
+
+    <div class="category-rows">
+      <p>Select by Most Popular</p>
+      <div class="product-rows">
+        <button id="p1" class="product"></button>
+        <button id="p2" class="product"></button>
+        <button id="p3" class="product"></button>
+        <button id="p4" class="product"></button>
+      </div>
+      <div class="seemore-div"><button class="seemore">See More</button></div>
+    </div>
+  </div>
+
+  <div class="footer">&copy; 2018 ZilterProject.github.io</div>
 </body>
 </html>
