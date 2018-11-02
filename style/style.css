@@ -5,6 +5,8 @@ html, body {
   overflow-x: hidden;
 }
 
+
+/*------------------------ HOMEPAGE --------------------------------*/
 .content {
   width: 40vw;
   margin: auto;
@@ -23,6 +25,7 @@ html, body {
   margin-top: 0.5vw;
   margin-bottom: 1vw;
   font-size: 1.5vh;
+  text-align: center;
 }
 
 .heading {
@@ -202,6 +205,61 @@ html, body {
 .product-rows {
   width: 100vw;
 }
+
+/*------------------------ FILTER --------------------------------*/
+.filter-content {
+  text-align: left;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.filter-row {
+  display: inline-table;
+}
+
+.filter {
+  width: 270px;
+  height: 270px;
+  background-color: rgb(240,240,240);
+  border-radius: 5px;
+  font-size: 2.5vh;
+  margin: 20px;
+  padding: 10px
+}
+
+.filter-title {
+  width: 92%;
+  height: 30px;
+  border: 2px solid rgb(150,150,150);
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 3vh;
+}
+
+.finish-filter {
+  position: absolute;
+  bottom: 5vw;
+  right: 5vw;
+  height: 50px;
+  width: 150px;
+  background-color: rgb(60,60,60);
+  color: white;
+  cursor: pointer;
+  font-size: 2vh;
+  border: none;
+}
+
+.finish-filter:hover {
+  background-color: rgb(30,30,30); 
+}
+
+input[type=checkbox] {
+  /*transform: scale(1.5);*/
+  zoom: 1.5;
+}
+
 
 /*------------------------ PRODUCT --------------------------------*/
 .back {
