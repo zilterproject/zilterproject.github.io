@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Zilter: Online Shopping Made Easier</title>
+  <link rel="stylesheet" type="text/css" href="style/style.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+  <div class="sm-header">
+    <a class="sm-title" title="Return to Homepage" href="index.html">Zilter</a>
+    <form action="results.html" class="sm-search">
+      <input type="text" class="search" placeholder="Search for product information" value="appliances">
+      <input type="image" src="images/search.png" alt="Submit" class="submit_search" width="20px" height="20px">
+    </form>
+  </div>
+
+  <div class="back"><a href="index.html">Back to Homepage</a></div>
+
+  <div class="sidebar">
+      <div class="selected-filters">
+          <p>You selected the following filters:</p>
+          <input type="checkbox" name="" checked>Feature <br><br>
+          <input type="checkbox" name="" checked>Feature <br><br>
+          <input type="checkbox" name="" checked>Feature <br><br>
+          <input type="checkbox" name="" checked>Feature <br><br>
+          <input type="checkbox" name="" checked>Feature
+      </div>
+
+      <div class="zilter">
+        <button class="zbut" onclick="location.href='filter.html'">Zilter More</button>
+      </div>
+  </div>
+
+  <div class="results-content">
+    <p>8 results for "appliances"</p>
+    <div class="product-rows">
+      <button id="c1" class="product" onclick="location.href='product.html'"></button>
+      <button id="c2" class="product" onclick="location.href='product.html'"></button>
+      <button id="c3" class="product" onclick="location.href='product.html'"></button>
+      <button id="c4" class="product" onclick="location.href='product.html'"></button>
+      <button id="c1" class="product" onclick="location.href='product.html'"></button>
+      <button id="c2" class="product" onclick="location.href='product.html'"></button>
+      <button id="c3" class="product" onclick="location.href='product.html'"></button>
+      <button id="c4" class="product" onclick="location.href='product.html'"></button>
+    </div>
+  </div>
+
+  <div class="footer">&copy; 2018 ZilterProject.github.io</div>
+</body>
+</html>
