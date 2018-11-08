@@ -3,6 +3,7 @@ html, body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+  background: rgb(220,220,220);
 }
 
 
@@ -12,7 +13,7 @@ html, body {
   margin: auto;
 }
 
-/*Header------------------------------*/
+/*Header*/
 .title {
   font-size: 50px;
   font-weight: bold;
@@ -32,17 +33,20 @@ html, body {
   text-align: center;
 }
 
-/*Search------------------------------*/
+/*Search*/
 .search {
   width: 95%;
   height: 30px;
   outline: none;
-  border-radius: 3px;
+  border-radius: 50px;
   border: 1px solid rgb(200,200,200);
   padding: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
   font-size: 2vh;
   margin-bottom: 30px;
   margin-left: -25px;
+  background-color: rgb(240,240,240);
 }
 
 .submit_search {
@@ -51,7 +55,7 @@ html, body {
   outline: none;
 }
 
-/*Separater------------------------------*/
+/*Separater*/
 .separater {
   text-align: center;
 }
@@ -65,13 +69,15 @@ html, body {
   font-size: 20px;
   margin-left: 15px;
   margin-right: 15px;
+  color: rgb(130,130,130);
 }
 
 .hr {
   width: 17.7vw;
+  border: 0.5px solid rgb(200,200,200);
 }
 
-/*Categories------------------------------*/
+/*Categories*/
 .category-rows {
   width: 40vw;
   margin: auto;
@@ -87,10 +93,11 @@ html, body {
   height: 9.65vw;
   cursor: pointer;
   outine: none;
-  border: 1px solid rgb(230,230,230);
+  border: 1px solid rgb(200,200,200);
   border-radius: 5px;
   background-size: contain;
   background-repeat: no-repeat;
+  background-color: rgb(240,240,240);
 }
 
 .product:hover {
@@ -112,6 +119,10 @@ html, body {
 #p3 { background-image: url("../images/p3.png"); }
 #p4 { background-image: url("../images/p4.png"); }
 
+.item {
+  background-color: rgb(255,255,255) !important;
+}
+
 .seemore-div {
   margin-top: 1.5vw;
   text-align: center;
@@ -124,11 +135,78 @@ html, body {
   outline: none;
   cursor: pointer;
   color: rgb(100,100,100);
+  background-color: rgb(220,220,220);
 }
 
 .seemore:hover {
   color: rgb(50,50,50);
 }
+
+
+
+
+/*------------------------ FILTER --------------------------------*/
+.filter-content {
+  text-align: left;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.filter-row {
+  display: inline-table;
+}
+
+.filter {
+  width: 275px;
+  height: 275px;
+  background-color: rgb(230,230,230);
+  border-radius: 5px;
+  font-size: 2.5vh;
+  margin: 20px;
+  padding: 10px
+}
+
+.filter-title {
+  width: 92%;
+  height: 30px;
+  border: 2px solid rgb(150,150,150);
+  background-color: rgb(240,240,240);
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 3vh;
+}
+
+.finish-filter {
+  position: absolute;
+  bottom: 5vw;
+  right: 5vw;
+  height: 50px;
+  width: 150px;
+  background-color: rgb(60,60,60);
+  color: white;
+  cursor: pointer;
+  font-size: 2vh;
+  border: none;
+  border-radius: 50px;
+}
+
+.finish-filter:hover {
+  background-color: rgb(30,30,30); 
+}
+
+input[type=checkbox] {
+  zoom: 1.5;
+}
+
+.filter label {
+  cursor: pointer;
+}
+
+
+
+
 
 /*------------------------ RESULTS --------------------------------*/
 .sm-header {
@@ -162,7 +240,7 @@ html, body {
 }
 
 .sidebar {
-  height: 88vh;
+  height: 82.5vh;
   width: 15vw;
   position: fixed;
   z-index: 1;
@@ -174,11 +252,16 @@ html, body {
   padding: 10px;
 }
 
+.selected-filters label {
+  cursor: pointer;
+  display: block;
+}
+
 .zilter {
-  position: absolute;
-  width: 100%;
+  position: fixed;
+  width: 16.2vw;
   height: 100px;
-  bottom: 0px;
+  bottom: 00px;
   left: 0px;
   z-index: 3;
 }
@@ -200,65 +283,22 @@ html, body {
 .results-content {
   width: 60vw;
   margin: auto;
+  padding-bottom: 10vh;
 }
 
 .product-rows {
-  width: 100vw;
+  width: 80vw;
 }
 
-/*------------------------ FILTER --------------------------------*/
-.filter-content {
-  text-align: left;
-  margin-left: 150px;
-  margin-right: 150px;
+.result {
+  width: 15vw;
+  height: 15vw;
+  margin: 1.5vw;
 }
 
-.filter-row {
-  display: inline-table;
-}
+#v1 { background-image: url("../images/v1.jpeg"); }
 
-.filter {
-  width: 270px;
-  height: 270px;
-  background-color: rgb(240,240,240);
-  border-radius: 5px;
-  font-size: 2.5vh;
-  margin: 20px;
-  padding: 10px
-}
 
-.filter-title {
-  width: 92%;
-  height: 30px;
-  border: 2px solid rgb(150,150,150);
-  padding: 10px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  text-align: center;
-  font-size: 3vh;
-}
-
-.finish-filter {
-  position: absolute;
-  bottom: 5vw;
-  right: 5vw;
-  height: 50px;
-  width: 150px;
-  background-color: rgb(60,60,60);
-  color: white;
-  cursor: pointer;
-  font-size: 2vh;
-  border: none;
-}
-
-.finish-filter:hover {
-  background-color: rgb(30,30,30); 
-}
-
-input[type=checkbox] {
-  /*transform: scale(1.5);*/
-  zoom: 1.5;
-}
 
 
 /*------------------------ PRODUCT --------------------------------*/
@@ -303,6 +343,7 @@ input[type=checkbox] {
   line-height: 50px;
   width: 100%;
   text-align: center;
-  background: rgb(220,220,220);
+  background: rgb(200,200,200);
   color: rgb(60,60,60);
+  border-top: 0.5px solid rgb(150,150,150);
 }
