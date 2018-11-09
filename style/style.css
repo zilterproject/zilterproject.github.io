@@ -296,7 +296,16 @@ input[type=checkbox] {
   margin: 1.5vw;
 }
 
-#v1 { background-image: url("../images/v1.jpg"); }
+#vac1 { background-image: url("../images/vac1.jpg"); }
+#vac2 { background-image: url("../images/vac2.jpg"); }
+#vac3 { background-image: url("../images/vac3.jpg"); }
+#vac4 { background-image: url("../images/vac4.jpg"); }
+#vac5 { background-image: url("../images/vac5.jpg"); }
+#vac6 { background-image: url("../images/vac6.jpg"); }
+#vac7 { background-image: url("../images/vac7.jpg"); }
+#vac8 { background-image: url("../images/vac8.jpg"); }
+#vac9 { background-image: url("../images/vac9.jpg"); }
+#vac10 { background-image: url("../images/vac10.jpg"); }
 
 
 
