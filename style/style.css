@@ -4,6 +4,7 @@ html, body {
   padding: 0;
   overflow-x: hidden;
   background: rgb(220,220,220);
+  margin-bottom: 5vh;
 }
 
 
@@ -93,7 +94,7 @@ html, body {
   height: 9.65vw;
   cursor: pointer;
   outine: none;
-  border: 1px solid rgb(200,200,200);
+  border: 5px double rgb(240,240,240);
   border-radius: 5px;
   background-size: contain;
   background-repeat: no-repeat;
@@ -101,8 +102,7 @@ html, body {
 }
 
 .product:hover {
-  transition: 0.5s;
-  box-shadow: 1px 1px 1px 1px rgb(200,200,200);
+  border: 5px double rgb(200,200,200);
 }
 
 .product:focus {
@@ -157,12 +157,12 @@ html, body {
 }
 
 .filter {
-  width: 275px;
+  width: 300px;
   height: 275px;
   background-color: rgb(230,230,230);
   border-radius: 5px;
   font-size: 2.5vh;
-  margin: 20px;
+  margin: 10px;
   padding: 10px
 }
 
@@ -180,10 +180,10 @@ html, body {
 
 .finish-filter {
   position: absolute;
-  bottom: 5vw;
-  right: 5vw;
-  height: 50px;
-  width: 150px;
+  bottom: 7vw;
+  right: 4vw;
+  height: 40px;
+  width: 100px;
   background-color: rgb(60,60,60);
   color: white;
   cursor: pointer;
@@ -296,7 +296,7 @@ input[type=checkbox] {
   margin: 1.5vw;
 }
 
-#v1 { background-image: url("../images/v1.jpeg"); }
+#v1 { background-image: url("../images/v1.jpg"); }
 
 
 
@@ -311,26 +311,47 @@ input[type=checkbox] {
 
 .product-page {
   width: 80vw;
-  text-align: center;
+  margin: auto;
 }
 
 .product-name {
-  font-size: 2vh;
+  font-size: 3vh;
   margin: 1.5vw;
+  margin-left: 10.5vw;
 }
 
 .product-div {
   display: inline-block;
-  border: 1px solid black;
-  width: 500px;
-  height: 500px;
-  margin: 1.5vw;
+  background-color: rgb(235,235,235);
+  border: none;
+  border-radius: 5px;
+  width: 38.8vw;
+  height: 38.8vw;
+  margin: 0.5vw;
+  padding: 2vw;
+  font-size: 0.8vw;
+}
+
+.product-div:hover {
+  border: none;
+}
+
+.info-name {
+  font-size: 1.5vw;
+  margin: 0;
+}
+
+.reviews {
+  width: 78.8vw;
 }
 
 .references {
-  margin: 2vw;
-  width: 100vw;
-  height: 20vh;
+  width: 78.8vw;
+}
+
+.references-links {
+  text-decoration: none;
+  font-size: 1vw;
 }
 
 /*Footer------------------------------*/
