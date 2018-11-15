@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129203212-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-129203212-1');
+  </script>
+
   <title>Zilter: Online Shopping Made Easier</title>
   <link rel="stylesheet" type="text/css" href="style/style.css">
   <link rel="icon" type="image/png" href="images/favicon.png">
@@ -11,7 +21,7 @@
       <p class="title">Zilter</p>
       <p class="caption">Information For Your Next Appliance Purchase</p>
       <form action="filter.html">
-        <input type="text" class="search" placeholder="Search for product information">
+        <input type="text" class="search" placeholder="Search for product information (e.g. vacuum)">
         <input type="image" src="images/search.png" alt="Submit" class="submit_search" width="20px" height="20px">
       </form>
     </div>
@@ -22,26 +32,24 @@
       <hr class="inline hr">
     </div>
 
+    <div class="category-line"><p style="float:left; display: inline-block;">Select by Category</p><a href="categories.html" class="seeall">See All</a></div>
     <div class="category-rows">
-      <p>Select by Category</p>
       <div class="product-rows">
         <button id="c1" class="product" onclick="location.href='filter.html'"></button>
         <button id="c2" class="product" onclick="location.href='filter.html'"></button>
         <button id="c3" class="product" onclick="location.href='filter.html'"></button>
         <button id="c4" class="product" onclick="location.href='filter.html'"></button>
       </div>
-      <div class="seemore-div"><button class="seemore">See more</button></div>
     </div>
 
+    <div class="category-line"><p style="float:left; display: inline-block;">Select by Most Popular</p><a href="popular.html" class="seeall">See All</a></div>
     <div class="category-rows">
-      <p>Select by Most Popular</p>
       <div class="product-rows">
         <button id="p1" class="product item" onclick="location.href='product.html'"></button>
         <button id="p2" class="product item" onclick="location.href='product.html'"></button>
         <button id="p3" class="product item" onclick="location.href='product.html'"></button>
         <button id="p4" class="product item" onclick="location.href='product.html'"></button>
       </div>
-      <div class="seemore-div"><button class="seemore">See more</button></div>
     </div>
   </div>
 

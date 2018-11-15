@@ -3,8 +3,8 @@ html, body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background: rgb(220,220,220);
-  margin-bottom: 5vh;
+  background: rgb(230,230,230);
+  height: 100%;
 }
 
 
@@ -12,6 +12,7 @@ html, body {
 .content {
   width: 40vw;
   margin: auto;
+  min-height: 87.1%;
 }
 
 /*Header*/
@@ -79,6 +80,23 @@ html, body {
 }
 
 /*Categories*/
+.category-line {
+  width: 100%;
+  height: 50px;
+}
+
+.seeall {
+  float: right;
+  vertical-align: middle;
+  line-height: 50px;
+  color: black;
+  font-weight: normal;
+}
+
+.seeall:hover {
+  color: rgb(100,100,100);
+}
+
 .category-rows {
   width: 40vw;
   margin: auto;
@@ -90,19 +108,20 @@ html, body {
 }
 
 .product {
-  width: 9.65vw;
-  height: 9.65vw;
+  width: 9.8vw;
+  height: 9.8vw;
   cursor: pointer;
   outine: none;
-  border: 5px double rgb(240,240,240);
+  border: 5px solid rgb(220,220,220);
   border-radius: 5px;
   background-size: contain;
   background-repeat: no-repeat;
   background-color: rgb(240,240,240);
+  padding: 10px;
 }
 
 .product:hover {
-  border: 5px double rgb(200,200,200);
+  border: 5px solid rgb(200,200,200);
 }
 
 .product:focus {
@@ -123,25 +142,6 @@ html, body {
   background-color: rgb(255,255,255) !important;
 }
 
-.seemore-div {
-  margin-top: 1.5vw;
-  text-align: center;
-}
-
-.seemore {
-  font-weight: bold;
-  margin: auto;
-  border: none;
-  outline: none;
-  cursor: pointer;
-  color: rgb(100,100,100);
-  background-color: rgb(220,220,220);
-}
-
-.seemore:hover {
-  color: rgb(50,50,50);
-}
-
 
 
 
@@ -150,6 +150,7 @@ html, body {
   text-align: left;
   margin-left: 150px;
   margin-right: 150px;
+  height: 80.6%;
 }
 
 .filter-row {
@@ -158,8 +159,8 @@ html, body {
 
 .filter {
   width: 300px;
-  height: 275px;
-  background-color: rgb(230,230,230);
+  height: 250px;
+  background-color: rgb(220,220,220);
   border-radius: 5px;
   font-size: 2.5vh;
   margin: 10px;
@@ -169,27 +170,28 @@ html, body {
 .filter-title {
   width: 92%;
   height: 30px;
-  border: 2px solid rgb(150,150,150);
+  border: 2px solid rgb(200,200,200);
   background-color: rgb(240,240,240);
   padding: 10px;
   margin-bottom: 20px;
   border-radius: 5px;
   text-align: center;
   font-size: 3vh;
+  cursor: pointer;
 }
 
 .finish-filter {
   position: absolute;
-  bottom: 7vw;
-  right: 4vw;
-  height: 40px;
-  width: 100px;
+  bottom: 4vw;
+  right: 15vw;
+  height: 50px;
+  width: 150px;
   background-color: rgb(60,60,60);
   color: white;
   cursor: pointer;
-  font-size: 2vh;
+  font-size: 2.5vh;
   border: none;
-  border-radius: 50px;
+  border-radius: 10px;
 }
 
 .finish-filter:hover {
@@ -209,6 +211,17 @@ input[type=checkbox] {
 
 
 /*------------------------ RESULTS --------------------------------*/
+.hideScrollLine {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 14.15vw;
+  height: 5.5vw;
+  z-index: 3;
+  border-right: 2px solid rgb(200,200,200);
+  background-color: rgb(230,230,230);
+}
+
 .sm-header {
   width: 100vw;
   height: 10vh;
@@ -240,16 +253,22 @@ input[type=checkbox] {
 }
 
 .sidebar {
-  height: 82.5vh;
-  width: 15vw;
+  height: 87vh;
+  width: 13vw;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   left: 0;
   overflow-x: hidden;
   margin-top: 10vh;
   border-right: 2px solid rgb(200,200,200);
+  background-color: rgb(200,200,200);
   padding: 10px;
+}
+
+.sidebarTxt {
+  font-size: 0.8vw;
+  color: rgb(100,100,100);
 }
 
 .selected-filters label {
@@ -259,11 +278,11 @@ input[type=checkbox] {
 
 .zilter {
   position: fixed;
-  width: 16.2vw;
-  height: 100px;
-  bottom: 00px;
+  width: 14.2vw;
+  height: 50px;
+  bottom: 0px;
   left: 0px;
-  z-index: 3;
+  z-index: 10;
 }
 
 .zbut {
@@ -284,10 +303,11 @@ input[type=checkbox] {
   width: 60vw;
   margin: auto;
   padding-bottom: 10vh;
+  z-index: 1;
 }
 
-.product-rows {
-  width: 80vw;
+.results-rows {
+  width:80vw;
 }
 
 .result {
@@ -311,11 +331,23 @@ input[type=checkbox] {
 
 
 /*------------------------ PRODUCT --------------------------------*/
+a {
+  text-decoration: none;
+}
+
 .back {
   position: absolute;
   top: 2vw;
-  left: 1.5vw;
-  text-decoration: none;
+  left: 2.5vw;
+  cursor: pointer;
+}
+
+.back a {
+  color: rgb(100,100,100);
+}
+
+.back a:hover {
+  color: black;
 }
 
 .product-page {
@@ -331,7 +363,7 @@ input[type=checkbox] {
 
 .product-div {
   display: inline-block;
-  background-color: rgb(235,235,235);
+  background-color: rgb(240,240,240);
   border: none;
   border-radius: 5px;
   width: 38.8vw;
@@ -365,15 +397,9 @@ input[type=checkbox] {
 
 /*Footer------------------------------*/
 .footer {
-  position: fixed;
-  z-index: 1;
-  left: 0px;
-  bottom: 0px;
   height: 50px;
   line-height: 50px;
-  width: 100%;
   text-align: center;
   background: rgb(200,200,200);
   color: rgb(60,60,60);
-  border-top: 0.5px solid rgb(150,150,150);
 }

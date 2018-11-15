@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129203212-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-129203212-1');
+  </script>
+
   <title>Zilter: Online Shopping Made Easier</title>
   <link rel="stylesheet" type="text/css" href="style/style.css">
   <link rel="icon" type="image/png" href="images/favicon.png">
@@ -14,11 +24,11 @@
     </form>
   </div>
 
-  <div class="back"><a href="index.html">Back to homepage</a></div>
+  <div class="hideScrollLine"><div class="back"><a href="index.html">Back to Homepage</a></div></div>
 
   <div class="sidebar">
       <div class="selected-filters">
-          <p>You selected the following filters:</p>
+          <p class="sidebarTxt">You selected the following filters:</p>
           
           <p>Brand</p>
           <label><input type="checkbox" checked disabled> Bissell</label>
@@ -73,14 +83,14 @@
       </div>
 
       <div class="zilter">
-        <button class="zbut" onclick="location.href='filter.html'">Zilter Your Results</button>
+        <button class="zbut" onclick="location.href='filter.html'">Zilter your results</button>
       </div>
   </div>
 
   <div class="results-content">
     <div>
       <p style="font-size: 2vh; margin-top: 2vw; margin-left: 1.5vw">10 results for "vacuum"</p>
-      <div class="product-rows">
+      <div class="results-rows">
         <button id="vac1" class="product result" onclick="location.href='product.html'"><p style="font-size:1vw;font-weight:bold;display:table-caption;">Bissell CleanView One Pass</p></button>
         <button id="vac2" class="product result" onclick="location.href='product.html'"></button>
         <button id="vac3" class="product result" onclick="location.href='product.html'"></button>

@@ -1,6 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129203212-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-129203212-1');
+  </script>
+
   <title>Zilter: Online Shopping Made Easier</title>
   <link rel="stylesheet" type="text/css" href="style/style.css">
   <link rel="icon" type="image/png" href="images/favicon.png">
@@ -17,7 +27,7 @@
     </form>
   </div>
 
-  <div class="back"><a href="results.html">Back to Results</a></div>
+  <div class="hideScrollLine" style="width:10vw;border:none"><div class="back"><a href="results.html">Back to Results</a></div></div>
 
   <p class="product-name">Bissell CleanView One Pass</p>
 
@@ -80,7 +90,7 @@
 
     <div class="product-div">
       <p class="info-name">Videos</p>
-      <video width="100%" controls><source src="images/vid1.mp4"></video>
+      <video width="100%" poster="images/thumbnail.png" controls><source src="images/vid1.mp4"></video>
       <p style="color:transparent;">bug</p>
       <p style="color:transparent;">bug</p>
       <p style="color:transparent;">bug</p>
@@ -91,6 +101,7 @@
 
     <div class="product-div reviews" style="overflow-y: scroll;">
       <p class="info-name" style="margin-bottom: 2vw">Official Reviews</p>
+      <hr>
       <img src="images/r1.svg" width="300px">
       <p>"The Bissell CleanView One Pass is an upright vacuum cleaner that does a decent job of cleaning floors, but it’s bulky and hard to maneuver around corners and tight spaces. This is a very affordable vacuum that is good at vacuuming pet hair and has suction control for vacuuming various types of surfaces. It’s a good tool for pet owners but has some weaknesses. The performance of this vacuum was hurt by the lack of maneuverability. It only moves back and forth and is extremely clunky around corners. You can vacuum with the handle close to the ground, however, which allowed us to push the vacuum far under a console, but other tight areas were more challenging.</p>
       <p>PROS / This vacuum has suction control so it can adjust for different surfaces.</p>
