@@ -138,6 +138,14 @@ html, body {
 #c2 { background-image: url("../images/c2.png"); }
 #c3 { background-image: url("../images/c3.png"); }
 #c4 { background-image: url("../images/c4.png"); }
+#c5 { background-image: url("../images/c5.png"); background-size: 70% 60%; background-position: center}
+#c6 { background-image: url("../images/c6.png"); background-size: 80% 80%; background-position: center}
+#c7 { background-image: url("../images/c7.png"); background-size: 70% 70%; background-position: center}
+#c8 { background-image: url("../images/c8.png"); background-size: 70% 70%; background-position: center}
+#c9 { background-image: url("../images/c9.png"); background-size: 75% 75%; background-position: center}
+#c10 { background-image: url("../images/c10.png"); background-size: 80% 80%; background-position: center}
+#c11 { background-image: url("../images/c11.png"); background-size: 70% 70%; background-position: center}
+#c12 { background-image: url("../images/c12.png"); background-size: 65% 65%; background-position: center}
 
 #p1 { background-image: url("../images/p1.png"); }
 #p2 { background-image: url("../images/p2.png"); }
