@@ -273,7 +273,7 @@ input[type=checkbox] {
   top: 0;
   left: 0;
   width: 14.2vw;
-  height: 5.63vw;
+  height: 5.9vw;
   z-index: 3;
   border-right: 2px solid rgb(200,200,200);
   background-color: rgb(230,230,230);
@@ -310,7 +310,7 @@ input[type=checkbox] {
 }
 
 .sidebar {
-  height: 87vh;
+  height: 90vh;
   width: 13vw;
   position: fixed;
   z-index: 2;
