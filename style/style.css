@@ -89,7 +89,7 @@ html, body {
   float: right;
   vertical-align: middle;
   line-height: 50px;
-  color: black;
+  color: rgb(50,50,150);
   font-weight: normal;
 }
 
@@ -105,6 +105,12 @@ html, body {
 
 .product-rows {
   width: 40vw;
+}
+
+.product-container {
+  width: 9.8vw;
+  height: 12vw;
+  display: inline-block;
 }
 
 .product {
@@ -142,6 +148,22 @@ html, body {
   background-color: rgb(255,255,255) !important;
 }
 
+.product-title {
+  margin-top: 10px;
+  display: block;
+  text-align: center;
+  font-size: 0.8vw;
+  color: rgb(100,100,100);
+}
+
+
+
+/*------------------------ CATEGORIES --------------------------------*/
+.seeall-title {
+  font-size: 2.5vw;
+  margin-left: 10vw;
+}
+
 
 
 
@@ -151,6 +173,12 @@ html, body {
   margin-left: 150px;
   margin-right: 150px;
   height: 80.6%;
+}
+
+.filter-msg {
+  font-size: 2vh;
+  margin-top: 2vw;
+  text-align: center;
 }
 
 .filter-row {
@@ -168,6 +196,8 @@ html, body {
 }
 
 .filter-title {
+  position: relative;
+  display: inline-block;
   width: 92%;
   height: 30px;
   border: 2px solid rgb(200,200,200);
@@ -177,7 +207,26 @@ html, body {
   border-radius: 5px;
   text-align: center;
   font-size: 3vh;
-  cursor: pointer;
+  cursor: help;
+}
+
+.popup {
+  position: absolute;
+  top: -150%;
+  left: 0%;
+  z-index: 4;
+  visibility: hidden;
+  width: 97%;
+  background-color: rgb(50,50,50);
+  color: white;
+  border-radius: 5px;
+  font-size: 1vw;
+  text-align: justify;
+  padding: 5px;
+}
+
+.filter-title:hover .popup {
+  visibility: visible;
 }
 
 .finish-filter {
@@ -191,7 +240,7 @@ html, body {
   cursor: pointer;
   font-size: 2.5vh;
   border: none;
-  border-radius: 10px;
+  border-radius: 50px;
 }
 
 .finish-filter:hover {
@@ -215,8 +264,8 @@ input[type=checkbox] {
   position: absolute;
   top: 0;
   left: 0;
-  width: 14.15vw;
-  height: 5.5vw;
+  width: 14.2vw;
+  height: 5.63vw;
   z-index: 3;
   border-right: 2px solid rgb(200,200,200);
   background-color: rgb(230,230,230);
@@ -264,6 +313,15 @@ input[type=checkbox] {
   border-right: 2px solid rgb(200,200,200);
   background-color: rgb(200,200,200);
   padding: 10px;
+  cursor: not-allowed;
+}
+
+.selected-filters label:hover{
+  cursor: not-allowed;
+}
+
+.selected-filters input:hover {
+  cursor: not-allowed;
 }
 
 .sidebarTxt {
@@ -307,7 +365,7 @@ input[type=checkbox] {
 }
 
 .results-rows {
-  width:80vw;
+  width: 75vw;
 }
 
 .result {
@@ -326,6 +384,20 @@ input[type=checkbox] {
 #vac8 { background-image: url("../images/vac8.jpg"); }
 #vac9 { background-image: url("../images/vac9.jpg"); }
 #vac10 { background-image: url("../images/vac10.jpg"); }
+
+.results-container {
+  width: 9.8vw;
+  height: 12vw;
+  display: inline-table;
+}
+
+.results-title {
+  margin-top: -1vw;
+  display: block;
+  text-align: center;
+  font-size: 1vw;
+  color: rgb(100,100,100);
+}
 
 
 
@@ -364,7 +436,7 @@ a {
 .product-div {
   display: inline-block;
   background-color: rgb(240,240,240);
-  border: none;
+  border: 1px solid rgb(200,200,200);
   border-radius: 5px;
   width: 38.8vw;
   height: 38.8vw;
@@ -374,7 +446,7 @@ a {
 }
 
 .product-div:hover {
-  border: none;
+  border: 1px solid rgb(200,200,200);
 }
 
 .info-name {
@@ -388,17 +460,32 @@ a {
 
 .references {
   width: 78.8vw;
+  height: auto;
+  margin-bottom: 15vh;
 }
 
 .references-links {
-  text-decoration: none;
   font-size: 1vw;
+}
+
+.references label {
+  background-color: rgb(200,200,200);
+  padding: 2px;
+}
+
+.references a {
+  text-decoration: underline;
+}
+
+.hr-big {
+  width: 20vw;
+  border: 0.5px solid rgb(170,170,170);
 }
 
 /*Footer------------------------------*/
 .footer {
-  height: 50px;
-  line-height: 50px;
+  height: 54px;
+  line-height: 54px;
   text-align: center;
   background: rgb(200,200,200);
   color: rgb(60,60,60);
