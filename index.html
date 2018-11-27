@@ -13,12 +13,13 @@
 
   <title>Zilter: Online Shopping Made Easier</title>
   <link rel="stylesheet" type="text/css" href="style/style.css">
-  <link rel="icon" type="image/png" href="images/favicon.png">
+  <link rel="icon" type="image/png" href="images/favicon_logo.png">
 </head>
 <body>
   <div class="content">
     <div class="heading">
-      <p class="title">Zilter</p>
+      <img src="images/logo.png" width="200px" style="margin-top: 5vh">
+      <!-- <p class="title">Zilter</p> -->
       <p class="caption">Information For Your Next Appliance Purchase</p>
       <form action="filter.html">
         <input type="text" class="search" placeholder="Search for product information (e.g. vacuum)">
@@ -37,19 +38,19 @@
       <div class="product-rows">
         <div class="product-container">
           <button id="c1" class="product" onclick="location.href='filter.html'"></button>
-          <span class="product-title">Refridgerator</span>
-        </div>
-        <div class="product-container">
-          <button id="c2" class="product" onclick="location.href='filter.html'"></button>
           <span class="product-title">Vacuum</span>
         </div>
         <div class="product-container">
-          <button id="c3" class="product" onclick="location.href='filter.html'"></button>
-          <span class="product-title">Water Boiler</span>
+          <button id="c2" class="product" onclick="location.href='filter.html'" disabled></button>
+          <span class="product-title">&nbsp;</span>
         </div>
         <div class="product-container">
-          <button id="c4" class="product" onclick="location.href='filter.html'"></button>
-          <span class="product-title">Washing Machine</span>
+          <button id="c3" class="product" onclick="location.href='filter.html'" disabled></button>
+          <span class="product-title">&nbsp;</span>
+        </div>
+        <div class="product-container">
+          <button id="c4" class="product" onclick="location.href='filter.html'" disabled></button>
+          <span class="product-title">&nbsp;</span>
         </div>
       </div>
     </div>
@@ -59,19 +60,19 @@
       <div class="product-rows">
         <div class="product-container">
           <button id="p1" class="product item" onclick="location.href='product.html'"></button>
-          <span class="product-title">iPhone XS</span>
+          <span class="product-title">Bissell CleanView</span>
         </div>
         <div class="product-container"> 
-          <button id="p2" class="product item" onclick="location.href='product.html'"></button>
-          <span class="product-title">13-inch MacBook Pro</span>
+          <button id="p2" class="product item" onclick="location.href='product.html'" disabled></button>
+          <span class="product-title">&nbsp;</span>
         </div>
         <div class="product-container">          
-          <button id="p3" class="product item" onclick="location.href='product.html'"></button>
-          <span class="product-title">Apple Watch Series 4</span>
+          <button id="p3" class="product item" onclick="location.href='product.html'" disabled></button>
+          <span class="product-title">&nbsp;</span>
         </div>
         <div class="product-container"> 
-          <button id="p4" class="product item" onclick="location.href='product.html'"></button>
-          <span class="product-title">AirPods</span>
+          <button id="p4" class="product item" onclick="location.href='product.html'" disabled></button>
+          <span class="product-title">&nbsp;</span>
         </div>
       </div>
     </div>

@@ -135,7 +135,7 @@ html, body {
 }
 
 #c1 { background-image: url("../images/c1.png"); }
-#c2 { background-image: url("../images/c2.png"); }
+/*#c2 { background-image: url("../images/c2.png"); }
 #c3 { background-image: url("../images/c3.png"); }
 #c4 { background-image: url("../images/c4.png"); }
 #c5 { background-image: url("../images/c5.png"); background-size: 70% 60%; background-position: center}
@@ -145,12 +145,17 @@ html, body {
 #c9 { background-image: url("../images/c9.png"); background-size: 75% 75%; background-position: center}
 #c10 { background-image: url("../images/c10.png"); background-size: 80% 80%; background-position: center}
 #c11 { background-image: url("../images/c11.png"); background-size: 70% 70%; background-position: center}
-#c12 { background-image: url("../images/c12.png"); background-size: 65% 65%; background-position: center}
+#c12 { background-image: url("../images/c12.png"); background-size: 65% 65%; background-position: center}*/
 
-#p1 { background-image: url("../images/p1.png"); }
-#p2 { background-image: url("../images/p2.png"); }
+button:disabled:hover {
+  border: 5px solid rgb(220,220,220);
+  cursor: default;
+}
+
+#p1 { background-image: url("../images/vac1.jpg"); }
+/*#p2 { background-image: url("../images/p2.png"); }
 #p3 { background-image: url("../images/p3.png"); }
-#p4 { background-image: url("../images/p4.png"); }
+#p4 { background-image: url("../images/p4.png"); }*/
 
 .item {
   background-color: rgb(255,255,255) !important;
@@ -181,6 +186,7 @@ html, body {
   margin-left: 150px;
   margin-right: 150px;
   height: 80.6%;
+  width: 90%;
 }
 
 .filter-msg {
@@ -194,25 +200,26 @@ html, body {
 }
 
 .filter {
-  width: 300px;
-  height: 250px;
-  background-color: rgb(220,220,220);
+  width: 18vw;
+  height: 300px;
   border-radius: 5px;
   font-size: 2.5vh;
   margin: 10px;
-  padding: 10px
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
 .filter-title {
   position: relative;
   display: inline-block;
-  width: 92%;
+  /*width: 92%;*/
+  width: 15vw;
   height: 30px;
   border: 2px solid rgb(200,200,200);
   background-color: rgb(240,240,240);
   padding: 10px;
-  margin-bottom: 20px;
-  border-radius: 5px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   text-align: center;
   font-size: 3vh;
   cursor: help;
@@ -220,12 +227,12 @@ html, body {
 
 .popup {
   position: absolute;
-  top: -150%;
+  top: -100%;
   left: 0%;
   z-index: 4;
   visibility: hidden;
   width: 97%;
-  background-color: rgb(50,50,50);
+  background-color: #555;
   color: white;
   border-radius: 5px;
   font-size: 1vw;
@@ -239,20 +246,22 @@ html, body {
 
 .finish-filter {
   position: absolute;
-  bottom: 4vw;
+  bottom: 22vw;
   right: 15vw;
   height: 50px;
   width: 150px;
-  background-color: rgb(60,60,60);
-  color: white;
+  color: rgb(100,100,100);
+  background-color: rgb(230,230,230);
+  border: 2px solid rgb(100,100,100);
   cursor: pointer;
   font-size: 2.5vh;
-  border: none;
-  border-radius: 50px;
+  border-radius: 5px;
 }
 
 .finish-filter:hover {
-  background-color: rgb(30,30,30); 
+  background-color: #444; 
+  border: 2px solid #444;
+  color: white;
 }
 
 input[type=checkbox] {
@@ -261,8 +270,50 @@ input[type=checkbox] {
 
 .filter label {
   cursor: pointer;
+  font-size: 1.2vw;
 }
 
+
+.collapsible {
+  background-color: #777;
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: -webkit-fill-available;
+  height: 15px;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 1.1vw;
+}
+
+.active, .collapsible:hover {
+  background-color: #555;
+}
+
+.collapsible:after {
+  content: '\002B';
+  color: white;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2212";
+}
+
+.content-collapse {
+  padding: 0 18px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+.description {
+  font-size: 1.1vw;
+}
 
 
 
