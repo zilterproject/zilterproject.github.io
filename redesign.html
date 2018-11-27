@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-129203212-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-129203212-1');
+  </script>
+
+  <title>Zilter: Online Shopping Made Easier</title>
+  <link rel="stylesheet" type="text/css" href="style/redesign.css">
+  <link rel="icon" type="image/png" href="images/favicon.png">
+</head>
+<body>
+  <div class="sm-header">
+    <a class="sm-title" title="Return to Homepage" href="index.html">Zilter</a>
+    <form action="results.html" class="sm-search">
+      <input type="text" class="search" placeholder="Search for product information" value="vacuum">
+      <input type="image" src="images/search.png" alt="Submit" class="submit_search" width="20px" height="20px">
+    </form>
+  </div>
+
+  <div class="back"><a href="index.html">Back to Homepage</a></div>
+
+  <div class="filter-content">
+    <p class="filter-msg">Filters are <i>optional</i> and will help return better search results.</p>
+
+    <div class="filter-row">
+      <div class="filter">
+        <div class="filter-title collapsible">Brand</div>
+        <div class="content-collapse">
+          <p class="description">A type of product manufactored by a company under a name.</p> <br>
+          <div style="padding-bottom: 20px">
+            <label><input type="checkbox"> Bissell</label>
+            <label><input type="checkbox"> Eureka</label> <br><br>
+            <label><input type="checkbox"> Dirt Devil</label>
+            <label><input type="checkbox"> Hoover</label> <br><br>
+            <label><input type="checkbox"> Dyson</label>
+            <label><input type="checkbox"> Kenmore</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="filter-row">
+      <div class="filter">
+        <div class="filter-title collapsible">Type</div>
+        <div class="content-collapse">
+          <p class="description">Determines the general size and appliance maneuverability.</p> <br>
+          <div style="padding-bottom: 20px">
+            <label><input type="checkbox"> Upright</label>
+            <label><input type="checkbox"> Hand-Held</label> <br><br>
+            <label><input type="checkbox"> Canister</label>
+            <label><input type="checkbox"> Robotic</label> <br><br>
+            <label><input type="checkbox"> Stick</label>
+            <label><input type="checkbox"> Central</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="filter-row">
+      <div class="filter">
+        <div class="filter-title collapsible">Surfaces</div>
+        <div class="content-collapse">
+          <p class="description">The type of material the vacuum will be cleaning off from.</p> <br>
+          <div style="padding-bottom: 20px">
+            <label><input type="checkbox"> Carpet</label> <br><br>
+            <label><input type="checkbox"> Hardwood</label> <br><br>
+            <label><input type="checkbox"> Tile</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="filter-row">
+      <div class="filter">
+        <div class="filter-title collapsible">Features</div>
+        <div class="content-collapse">
+          <p class="description">Extra abilities that can help with convenience and effectiveness.</p> <br>
+          <div style="padding-bottom: 20px">
+            <label><input type="checkbox"> Tube</label>
+            <label><input type="checkbox"> Cord Control</label> <br><br>
+            <label><input type="checkbox"> Self Propelled</label> <br><br>
+            <label><input type="checkbox"> Brush Agitator</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="filter-row">
+      <div class="filter">
+        <div class="filter-title collapsible">Filter</div>
+        <div class="content-collapse">
+          <p class="description">Mechanism for the how the vacuum collects the waste.</p> <br>
+          <div style="padding-bottom: 20px">
+            <label><input type="checkbox"> HEPA</label>
+            <label><input type="checkbox"> Removeable</label> <br><br>
+            <label><input type="checkbox"> Dust Bag</label> <br><br>
+            <label><input type="checkbox"> Built-In</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="filter-row">
+      <div class="filter">
+        <div class="filter-title collapsible">Airflow</div>
+        <div class="content-collapse">
+          <p class="description">CFM is cubic feet per minute. It is how much air a fan moves.</p> <br>
+          <div style="padding-bottom: 20px">
+            <label><input type="checkbox"> 30 CFM</label>
+            <label><input type="checkbox"> 150 CFM</label> <br><br>
+            <label><input type="checkbox"> 70 CFM</label>
+            <label><input type="checkbox"> 180 CFM</label> <br><br>
+            <label><input type="checkbox"> 100 CFM</label>
+            <label><input type="checkbox"> 250 CFM</label>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="filter-row">
+      <div class="filter">
+        <div class="filter-title collapsible">Cost</div>
+        <div class="content-collapse">
+          <p class="description">Price range for the appliance ranging from $0 to $250+.</p> <br>
+          <div style="padding-bottom: 20px">
+            <label><input type="checkbox"> $0-$50</label>
+            <label><input type="checkbox"> $120-$180</label> <br><br>
+            <label><input type="checkbox"> $50-$80</label>
+            <label><input type="checkbox"> $180-$250</label> <br><br>
+            <label><input type="checkbox"> $90-$120</label>
+            <label><input type="checkbox"> $250+</label>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <button class="finish-filter" onclick="location.href='results.html'">Finish</button>
+
+  <div class="footer">&copy; 2018 Zilter Project</div>
+
+  <script>
+    var coll = document.getElementsByClassName("collapsible");
+    var i;
+
+    for (i = 0; i < coll.length; i++) {
+      coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.maxHeight){
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        } 
+      });
+    }
+  </script>
+</body>
+</html>
