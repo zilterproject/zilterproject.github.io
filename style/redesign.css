@@ -184,10 +184,9 @@ button:disabled:hover {
 /*------------------------ FILTER --------------------------------*/
 .filter-content {
   text-align: left;
-  margin-left: 150px;
-  margin-right: 150px;
   height: 80.6%;
   width: 90%;
+  margin: auto;
 }
 
 .filter-msg {
@@ -201,7 +200,7 @@ button:disabled:hover {
 }
 
 .filter {
-  width: 18vw;
+  width: 19.88vw;
   height: 300px;
   border-radius: 5px;
   font-size: 2.5vh;

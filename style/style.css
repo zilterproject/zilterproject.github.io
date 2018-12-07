@@ -3,7 +3,7 @@ html, body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  background: rgb(230,230,230);
+  background: #151105;
   height: 100%;
 }
 
@@ -29,6 +29,7 @@ html, body {
   margin-bottom: 1vw;
   font-size: 1.5vh;
   text-align: center;
+  color: white;
 }
 
 .heading {
@@ -38,17 +39,18 @@ html, body {
 /*Search*/
 .search {
   width: 95%;
-  height: 30px;
+  height: inherit;
   outline: none;
   border-radius: 50px;
-  border: 1px solid rgb(200,200,200);
+  border: none;
   padding: 10px;
   padding-left: 20px;
   padding-right: 20px;
   font-size: 2vh;
   margin-bottom: 30px;
   margin-left: -25px;
-  background-color: rgb(240,240,240);
+  background-color: #3D3C3A;
+  color: white;
 }
 
 .submit_search {
@@ -89,7 +91,7 @@ html, body {
   float: right;
   vertical-align: middle;
   line-height: 50px;
-  color: rgb(50,50,150);
+  color: rgb(80,180,80);
   font-weight: normal;
 }
 
@@ -175,6 +177,7 @@ button:disabled:hover {
 .seeall-title {
   font-size: 2.5vw;
   margin-left: 10vw;
+  color: white;
 }
 
 
@@ -183,15 +186,16 @@ button:disabled:hover {
 /*------------------------ FILTER --------------------------------*/
 .filter-content {
   text-align: left;
-  margin-left: 150px;
-  margin-right: 150px;
   height: 80.6%;
+  width: 90%;
+  margin: auto;
 }
 
 .filter-msg {
   font-size: 2vh;
   margin-top: 2vw;
   text-align: center;
+  color: white;
 }
 
 .filter-row {
@@ -199,25 +203,24 @@ button:disabled:hover {
 }
 
 .filter {
-  width: 300px;
-  height: 250px;
-  background-color: rgb(220,220,220);
+  width: 19.88vw;
+  height: 300px;
   border-radius: 5px;
   font-size: 2.5vh;
   margin: 10px;
-  padding: 10px
+  padding: 10px;
+  margin-bottom: 20px;
 }
 
 .filter-title {
   position: relative;
   display: inline-block;
-  width: 92%;
+  width: 15vw;
   height: 30px;
   border: 2px solid rgb(200,200,200);
-  background-color: rgb(240,240,240);
   padding: 10px;
-  margin-bottom: 20px;
-  border-radius: 5px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
   text-align: center;
   font-size: 3vh;
   cursor: help;
@@ -225,12 +228,12 @@ button:disabled:hover {
 
 .popup {
   position: absolute;
-  top: -150%;
+  top: -100%;
   left: 0%;
   z-index: 4;
-  visibility: hidden;
+  visibility: visible;
   width: 97%;
-  background-color: rgb(50,50,50);
+  background-color: #555;
   color: white;
   border-radius: 5px;
   font-size: 1vw;
@@ -244,20 +247,20 @@ button:disabled:hover {
 
 .finish-filter {
   position: absolute;
-  bottom: 4vw;
-  right: 15vw;
+  bottom: 18vw;
+  right: 12vw;
   height: 50px;
   width: 150px;
-  background-color: rgb(60,60,60);
   color: white;
+  background-color: #399937;
+  border: none;
   cursor: pointer;
   font-size: 2.5vh;
-  border: none;
-  border-radius: 50px;
+  border-radius: 5px;
 }
 
 .finish-filter:hover {
-  background-color: rgb(30,30,30); 
+  background-color: #246022;
 }
 
 input[type=checkbox] {
@@ -266,23 +269,42 @@ input[type=checkbox] {
 
 .filter label {
   cursor: pointer;
+  font-size: 1vw;
+}
+
+
+.collapsible {
+  background-color: rgb(60,60,60);
+  color: white;
+  cursor: pointer;
+  padding: 18px;
+  width: -webkit-fill-available;
+  height: 15px;
+  border: none;
+  outline: none;
+  font-size: 1.1vw;
+}
+
+.content-collapse {
+  padding: 0 18px;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  background-color: #f1f1f1;
+}
+
+.description {
+  font-size: 1.1vw;
+}
+
+table {
+  width: 280px;
+  margin: auto;
 }
 
 
 
 
 /*------------------------ RESULTS --------------------------------*/
-.hideScrollLine {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 14.2vw;
-  height: 5.9vw;
-  z-index: 3;
-  border-right: 2px solid rgb(200,200,200);
-  background-color: rgb(230,230,230);
-}
-
 .sm-header {
   width: 100vw;
   height: 10vh;
@@ -322,8 +344,7 @@ input[type=checkbox] {
   left: 0;
   overflow-x: hidden;
   margin-top: 10vh;
-  border-right: 2px solid rgb(200,200,200);
-  background-color: rgb(200,200,200);
+  background-color: #3D3C3A;
   padding: 10px;
   cursor: not-allowed;
 }
@@ -338,7 +359,7 @@ input[type=checkbox] {
 
 .sidebarTxt {
   font-size: 0.8vw;
-  color: rgb(100,100,100);
+  color: white;
 }
 
 .selected-filters label {
@@ -358,7 +379,7 @@ input[type=checkbox] {
 .zbut {
   width: 100%;
   height: 50px;
-  background-color: rgb(60,60,60);
+  background-color: #399937;
   color: white;
   border: none;
   font-size: 2vh;
@@ -366,7 +387,7 @@ input[type=checkbox] {
 }
 
 .zbut:hover {
-  background-color: rgb(30,30,30);
+  background-color: #246022;
 }
 
 .results-content {
@@ -378,6 +399,7 @@ input[type=checkbox] {
 
 .results-rows {
   width: 75vw;
+  margin-left: 21vw;
 }
 
 .result {
@@ -422,7 +444,7 @@ a {
 .back {
   position: absolute;
   top: 2vw;
-  left: 2.5vw;
+  left: 2vw;
   cursor: pointer;
 }
 
@@ -431,7 +453,7 @@ a {
 }
 
 .back a:hover {
-  color: black;
+  color: white;
 }
 
 .product-page {
@@ -443,12 +465,14 @@ a {
   font-size: 3vh;
   margin: 1.5vw;
   margin-left: 10.5vw;
+  color: white;
 }
 
 .product-div {
   display: inline-block;
-  background-color: rgb(240,240,240);
-  border: 1px solid rgb(200,200,200);
+  background-color: #3D3C3A;
+  color: white;
+  border: 1px solid #3D3C3A;
   border-radius: 5px;
   width: 38.8vw;
   height: 38.8vw;
@@ -458,7 +482,7 @@ a {
 }
 
 .product-div:hover {
-  border: 1px solid rgb(200,200,200);
+  border: 1px solid #3D3C3A;
 }
 
 .info-name {
@@ -481,7 +505,7 @@ a {
 }
 
 .references label {
-  background-color: rgb(200,200,200);
+  background-color: #151105;
   padding: 2px;
 }
 
