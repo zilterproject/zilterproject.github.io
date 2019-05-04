@@ -27,19 +27,20 @@ html, body {
 .caption {
   margin-top: 0.5vw;
   margin-bottom: 1vw;
-  font-size: 1.5vh;
+  font-size: 1vw;
   text-align: center;
   color: white;
 }
 
 .heading {
   text-align: center;
+  margin-bottom: 3vw;
 }
 
 /*Search*/
 .search {
   width: 95%;
-  height: inherit;
+  height: 1.5vw;
   outline: none;
   border-radius: 50px;
   border: none;
@@ -59,6 +60,10 @@ html, body {
   outline: none;
 }
 
+input::placeholder {
+  font-size: 1.2vw;
+}
+
 /*Separater*/
 .separater {
   text-align: center;
@@ -69,22 +74,16 @@ html, body {
   vertical-align: middle;
 }
 
-.or {
-  font-size: 20px;
-  margin-left: 15px;
-  margin-right: 15px;
-  color: rgb(130,130,130);
-}
-
-.hr {
-  width: 17.7vw;
-  border: 0.5px solid rgb(200,200,200);
-}
-
 /*Categories*/
 .category-line {
   width: 100%;
   height: 50px;
+}
+
+.category-title {
+  float:left;
+  display: inline-block;
+  color: white;
 }
 
 .seeall {
@@ -106,7 +105,7 @@ html, body {
 }
 
 .product-rows {
-  width: 40vw;
+  width: 42vw;
 }
 
 .product-container {
@@ -120,16 +119,17 @@ html, body {
   height: 9.8vw;
   cursor: pointer;
   outine: none;
-  border: 5px solid rgb(220,220,220);
   border-radius: 5px;
   background-size: contain;
   background-repeat: no-repeat;
   background-color: rgb(240,240,240);
   padding: 10px;
+  transition: all 0.3s;
 }
 
 .product:hover {
-  border: 5px solid rgb(200,200,200);
+  opacity: 0.8;
+  transition: all 0.3s;
 }
 
 .product:focus {
@@ -150,8 +150,8 @@ html, body {
 #c12 { background-image: url("../images/c12.png"); background-size: 65% 65%; background-position: center}*/
 
 button:disabled:hover {
-  border: 5px solid rgb(220,220,220);
-  cursor: default;
+  opacity: 1;
+  cursor: not-allowed;
 }
 
 #p1 { background-image: url("../images/vac1.jpg"); }
@@ -164,11 +164,11 @@ button:disabled:hover {
 }
 
 .product-title {
-  margin-top: 10px;
+  margin-top: 0.5vw;
   display: block;
   text-align: center;
-  font-size: 0.8vw;
-  color: rgb(100,100,100);
+  font-size: 1vw;
+  color: rgb(150,150,150);
 }
 
 
@@ -520,9 +520,14 @@ a {
 
 /*Footer------------------------------*/
 .footer {
-  height: 54px;
-  line-height: 54px;
+  position: absolute;
   text-align: center;
-  background: rgb(200,200,200);
-  color: rgb(60,60,60);
+  width: 100%;
+  bottom: 0;
+  height: 3vw;
+  line-height: 3vw;
+  font-size: 0.7vw;
+  background: rgb(30,30,30);
+  color: white;
+  padding-left: 1vw;
 }
