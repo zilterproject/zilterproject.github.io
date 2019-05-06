@@ -186,7 +186,6 @@ button:disabled:hover {
 /*------------------------ FILTER --------------------------------*/
 .filter-content {
   text-align: left;
-  height: 80.6%;
   width: 90%;
   margin: auto;
 }
@@ -204,12 +203,10 @@ button:disabled:hover {
 
 .filter {
   width: 19.88vw;
-  height: 300px;
+  height: 19.88vw;
   border-radius: 5px;
-  font-size: 2.5vh;
-  margin: 10px;
-  padding: 10px;
-  margin-bottom: 20px;
+  font-size: 1.5vw;
+  margin: 1vw;
 }
 
 .filter-title {
@@ -265,6 +262,7 @@ button:disabled:hover {
 
 input[type=checkbox] {
   zoom: 1.5;
+  font-size: 0.8vw;
 }
 
 .filter label {
@@ -297,7 +295,7 @@ input[type=checkbox] {
 }
 
 table {
-  width: 280px;
+  width: 95%;
   margin: auto;
 }
 
